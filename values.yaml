@@ -1,4 +1,4 @@
 deployment:
-  replicas: 1
+  replicas: 2
 ingress:
-  host: qa-micro-services-admin.edshopper.com
+  host: perf-micro-services-admin.edshopper.com
