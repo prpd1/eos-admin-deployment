@@ -29,6 +29,7 @@
                       sh "/usr/local/bin/helm repo update"
                       sh "/usr/local/bin/helm upgrade  --install --force micro-services-admin  --namespace ${env} -f values.yaml eos-helm-local/micro-services-admin"
                       sh "/usr/local/bin/helm list -a --namespace ${env}"
+                      sh "rm -rf values.yaml"
               }
           }
           }
