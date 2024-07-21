@@ -19,7 +19,7 @@
       node (label) {
 
           stage ('Checkout SCM'){
-            git credentialsId: 'git', url: 'https://dptrealtime@bitbucket.org/dptrealtime/eos-admin-deployment.git', branch:  "${env}"
+            git credentialsId: 'git', url: 'https://github.com/prpd1/eos-admin-deployment/blob/perf/Jenkinsfile', branch:  "${env}"
           }
 
           stage ('Helm Chart') {
